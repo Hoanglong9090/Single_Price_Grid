@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Single_Price_Grid</title>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<style type="text/css">
+
+		:root {
+			--Light-Gray: hsl(204, 43%, 93%);
+			--Grayish-Blue: hsl(218, 22%, 67%);
+			--Cyan: hsl(179, 62%, 43%);
+			--Bright-Yellow: hsl(71, 73%, 54%);
+			--Off-Cyan: hsl(179, 47%, 60%);
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+
+		}
+
+		body {
+			font-family: 'Karla',sans-serif;
+			background:var(--Light-Gray) ;
+ 			padding: 5rem 2rem;
+ 			height: 100vh;
+		}
+		.container {
+			background: white;
+  			border-radius: 5px;
+		}
+
+		.container .header {
+			padding: 5rem 2rem;
+		}
+		.container .price {
+    	background: var(--Cyan);
+  		color: #fff;
+  		padding: 1rem 1rem 1.5rem 1.5rem;
+  		border-bottom-left-radius: 4px;
+}
+		.container .why_us {
+		background: var(--Off-Cyan);
+		color: #fff;
+		padding: 0.5rem 1rem 1.5rem 1.5rem;
+		border-bottom-right-radius: 4px;
+		}
+		.container .header .main-header {
+			color: var(--Cyan);
+			padding: 17px 0px 10px 17px;
+			font-size: 17px;
+		}
+		h4 {
+			margin: 15px 0px 7px 5px;
+		}
+		
+		.container .header h4 {
+			color: var(--Bright-Yellow);
+			padding: 0px 0px 10px 14px;
+		}
+		.container .header p {
+			padding: 0px 0px 10px 14px;
+		}
+		.container .price p {
+			margin-top: 2px ;
+		}
+		.container .price .dola {
+			padding:20px 0px;
+		}
+		.container  .dollar {
+			font-size: 1.5rem;
+		}
+		.container .price .btn {
+			display: block;
+			border-radius: 7px;
+			background: var(--Bright-Yellow);
+			color: white;
+			font-weight: 600;
+			width: 90%;
+			padding: 10px 0px;
+			margin: 20px 0px 5px 4px ;
+			text-align: center;
+			cursor: pointer;
+			box-shadow: 1px 1px 1px 1px var(--Bright-Yellow);
+		}
+
+		.container .price .btn:hover {
+			background: white;
+			color: var(--Cyan);
+			box-shadow: 1px 1px 1px 1px white;
+		}
+		p {
+			margin: 5px;
+		     }
+		     .container .price {
+		     	text-align: left;
+		     }
+			.container .why_us {
+				line-height: 1.1;
+				text-align: left;
+		}
+		   .container .why_us h4{
+		   	padding-top: 10px;
+		   }
+		@media screen and (min-width:600px ){
+			body {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr ;
+				grid-auto-rows: 200px 250px;
+			}
+			.container .header {
+				grid-column: 1/ 3;
+				padding: 16px 16px;
+			}
+			
+	</style>
+</head>
+<body>
+<div class="container">
+	<header class="header">
+	<h2 class="main-header">Join our community</h2>
+	<h4 >30-day,hassle-free money back guarantee</h4>
+	<p>Gain access to our full library of tutorials along with expert code reviews.<br>
+	Perfect for any developers who are serious about honing their skills.</p>
+	</header>
+	<section class="price">
+		<h4>Monthly Subscription</h4>
+		<p class="dola"><span class="dollar">&dollar;29</span><span class="month">&nbsp; per month</span></p>
+		<p>Full access for less than $1 a day</p>
+		<a href="" class="btn">Sign Up</a>
+	</section>
+	<section class="why_us">
+		<h4>Why Us</h4>
+		<p>Tutorials by industry expects</p>
+		<p> Peer expert code review </p>
+		<p>Coding exercies</p>
+		<p>Access to our GitHub repos</p>
+		<p>Community forum</p>
+		<p>Flashcard decks</p>
+		<p>New videos every week</p>
+	</section>
+</div>
+</body>
+</html>
